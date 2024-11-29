@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="melodic-song-api" />
+        <module name="melodic-auth" />
+        <module name="song-job" />
+        <module name="melodic-song-domain" />
+        <module name="melodic-oss" />
+        <module name="melodic-song-infra" />
+        <module name="song-controller" />
+        <module name="song-mq" />
+        <module name="melodic-song-starter" />
+        <module name="melodic-song-common" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

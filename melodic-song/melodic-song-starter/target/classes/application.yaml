@@ -28,5 +28,4 @@ spring:
         config:
           enabled: true
 
-
 publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANHit8V7A2EpvfnOxxaKAgCzqmXXY6vZR8axORJUGA+BGrgSt231g57+x8cj6/y54Nva8/0xXXLa9Jt2CE1D0mkCAwEAAQ==
