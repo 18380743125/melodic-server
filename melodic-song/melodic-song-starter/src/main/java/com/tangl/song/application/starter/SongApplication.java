@@ -1,4 +1,4 @@
-package com.tangl.song.starter;
+package com.tangl.song.application.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

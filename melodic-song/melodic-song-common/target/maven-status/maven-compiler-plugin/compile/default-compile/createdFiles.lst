@@ -1,0 +1,5 @@
+com/tangl/song/common/entity/Result.class
+com/tangl/song/common/entity/PageInfo.class
+com/tangl/song/common/enums/IsDeletedFlagEnum.class
+com/tangl/song/common/entity/PageResult.class
+com/tangl/song/common/enums/ResultCodeEnum.class

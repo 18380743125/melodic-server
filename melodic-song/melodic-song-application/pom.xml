@@ -9,7 +9,6 @@
         <version>1.0.0</version>
     </parent>
 
-    <groupId>com.tangl.melodic</groupId>
     <artifactId>melodic-song-application</artifactId>
     <packaging>pom</packaging>
     <modules>
