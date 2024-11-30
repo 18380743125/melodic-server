@@ -2,11 +2,13 @@ package com.tangl.song.domain.entity;
 
 import com.tangl.song.common.entity.PageInfo;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Date;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class MelodyArtistBO extends PageInfo implements Serializable {
 

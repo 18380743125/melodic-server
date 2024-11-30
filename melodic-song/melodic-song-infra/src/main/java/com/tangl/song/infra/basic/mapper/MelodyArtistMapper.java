@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 歌手信息表(MelodyArtist)表数据库访问层
  */
-public interface MelodyArtistDao {
+public interface MelodyArtistMapper {
 
     /**
      * 通过ID查询单条数据

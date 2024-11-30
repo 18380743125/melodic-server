@@ -1,7 +1,7 @@
 package com.tangl.song.infra.basic.service.impl;
 
 import com.tangl.song.infra.basic.entity.MelodyArtist;
-import com.tangl.song.infra.basic.mapper.MelodyArtistDao;
+import com.tangl.song.infra.basic.mapper.MelodyArtistMapper;
 import com.tangl.song.infra.basic.service.MelodyArtistService;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import java.util.List;
 public class MelodyArtistServiceImpl implements MelodyArtistService {
 
     @Resource
-    private MelodyArtistDao melodyArtistDao;
+    private MelodyArtistMapper melodyArtistDao;
 
     /**
      * 通过ID查询单条数据
