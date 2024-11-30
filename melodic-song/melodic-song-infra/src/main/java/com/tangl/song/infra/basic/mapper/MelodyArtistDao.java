@@ -29,7 +29,7 @@ public interface MelodyArtistDao {
     /**
      * 分页条件查询歌手信息
      */
-    List<MelodyArtist> queryPage(MelodyArtist artist, @Param("offset") int offset, @Param("pageSize") Integer pageSize);
+    List<MelodyArtist> queryPage(@Param("artist") MelodyArtist artist, @Param("offset") int offset, @Param("pageSize") Integer pageSize);
 
     /**
      * 新增数据

@@ -1,32 +1,5 @@
 server:
   port: 8082
 spring:
-  datasource:
-    username: root
-    password: fGlXNSVorRkj25Tepi17lTj42Pf/eHOsEoODdBUrjgGacQ+caMPqKEgvNmhGcFK3p/5rVF2NIgea5If72kqm5Q==
-    url: jdbc:mysql://127.0.0.1:3306/club_server?characterEncoding=utf8&serverTimeZone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    type: com.alibaba.druid.pool.DruidDataSource
-    druid:
-      initial-size: 20
-      min-idle: 20
-      max-active: 100
-      max-wait: 60000
-      connection-properties: config.decrypt=true;config.decrypt.key=${publicKey}
-      stat-view-servlet:
-        enabled: true
-        url-pattern: /druid/*
-        login-username: admin
-        login-password: 123456
-      filter:
-        stat:
-          enabled: true
-          slow-sql-millis: 2000
-          log-slow-sql: true
-        wall:
-          enabled: true
-        config:
-          enabled: true
-
-
-publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBANHit8V7A2EpvfnOxxaKAgCzqmXXY6vZR8axORJUGA+BGrgSt231g57+x8cj6/y54Nva8/0xXXLa9Jt2CE1D0mkCAwEAAQ==
+  profiles:
+    active: dev

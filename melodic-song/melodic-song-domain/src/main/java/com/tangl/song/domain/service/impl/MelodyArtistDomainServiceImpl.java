@@ -40,7 +40,7 @@ public class MelodyArtistDomainServiceImpl implements MelodyArtistDomainService 
     public Boolean delete(MelodyArtistBO artistBO) {
         MelodyArtist artist = artistBOConverter.artistBO2Artist(artistBO);
         artist.setIsDeleted(IsDeletedFlagEnum.DELETED.getCode());
-        return this.update(artistBO);
+        return this.artistService.update(artist) > 0;
     }
 
     @Override
@@ -52,14 +52,14 @@ public class MelodyArtistDomainServiceImpl implements MelodyArtistDomainService 
 
         // 查询数量
         MelodyArtist artist = artistBOConverter.artistBO2Artist(artistBO);
-        long count = artistService.countByCondition(artist);
+        int count = artistService.countByCondition(artist);
         if (count == 0) {
             return pageResult;
         }
 
         List<MelodyArtist> artistList = artistService.queryPage(artist, offset, artistBO.getPageSize());
 
-        List<MelodyArtistBO> artistBOList = artistBOConverter.artistList2ArtistBOList(artistBO);
+        List<MelodyArtistBO> artistBOList = artistBOConverter.artistList2ArtistBOList(artistList);
         pageResult.setRecords(artistBOList);
         pageResult.setTotal(count);
         return pageResult;

@@ -11,5 +11,5 @@ public interface MelodyArtistBOConverter {
 
     MelodyArtist artistBO2Artist(MelodyArtistBO artistBO);
 
-    List<MelodyArtistBO> artistList2ArtistBOList(MelodyArtistBO artistBO);
+    List<MelodyArtistBO> artistList2ArtistBOList(List<MelodyArtist> artistList);
 }

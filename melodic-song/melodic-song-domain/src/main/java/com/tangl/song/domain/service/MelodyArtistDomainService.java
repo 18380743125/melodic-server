@@ -3,8 +3,6 @@ package com.tangl.song.domain.service;
 import com.tangl.song.common.entity.PageResult;
 import com.tangl.song.domain.entity.MelodyArtistBO;
 
-import java.util.List;
-
 public interface MelodyArtistDomainService {
 
     /**
