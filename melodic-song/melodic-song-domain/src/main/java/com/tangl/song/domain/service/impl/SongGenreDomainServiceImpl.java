@@ -3,6 +3,7 @@ package com.tangl.song.domain.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.tangl.song.common.enums.IsDeletedFlagEnum;
+import com.tangl.song.common.exception.MelodicBusinessException;
 import com.tangl.song.domain.converter.SongGenreBOConverter;
 import com.tangl.song.domain.entity.SongGenreBO;
 import com.tangl.song.domain.service.SongGenreDomainService;
@@ -23,31 +24,31 @@ public class SongGenreDomainServiceImpl implements SongGenreDomainService {
     private SongGenreService genreService;
 
     @Override
-    public Boolean add(SongGenreBO genreBO) {
+    public void add(SongGenreBO genreBO) {
         String name = genreBO.getName();
         QueryWrapper<SongGenre> query = Wrappers.query();
         query.eq("name", name);
         SongGenre genreDB = genreService.getOne(query);
         if (genreDB != null) {
-            return false;
+            throw new MelodicBusinessException("流派名称已存在");
         }
 
         SongGenre genre = genreBOConverter.genreBO2Genre(genreBO);
         genre.setIsDeleted(IsDeletedFlagEnum.UN_DELETED.getCode());
-        return genreService.save(genre);
+        genreService.save(genre);
     }
 
     @Override
-    public Boolean update(SongGenreBO genreBO) {
+    public void update(SongGenreBO genreBO) {
         SongGenre genre = genreBOConverter.genreBO2Genre(genreBO);
-        return genreService.updateById(genre);
+        genreService.updateById(genre);
     }
 
     @Override
-    public Boolean delete(SongGenreBO genreBO) {
+    public void delete(SongGenreBO genreBO) {
         SongGenre genre = genreBOConverter.genreBO2Genre(genreBO);
         genre.setIsDeleted(IsDeletedFlagEnum.DELETED.getCode());
-        return genreService.updateById(genre);
+        genreService.updateById(genre);
     }
 
     @Override

@@ -31,16 +31,16 @@ public class MelodyArtistDomainServiceImpl implements MelodyArtistDomainService 
     }
 
     @Override
-    public Boolean update(MelodyArtistBO artistBO) {
+    public void update(MelodyArtistBO artistBO) {
         MelodyArtist artist = artistBOConverter.artistBO2Artist(artistBO);
-        return artistService.update(artist) > 0;
+        artistService.update(artist);
     }
 
     @Override
-    public Boolean delete(MelodyArtistBO artistBO) {
+    public void delete(MelodyArtistBO artistBO) {
         MelodyArtist artist = artistBOConverter.artistBO2Artist(artistBO);
         artist.setIsDeleted(IsDeletedFlagEnum.DELETED.getCode());
-        return this.artistService.update(artist) > 0;
+        this.artistService.update(artist);
     }
 
     @Override

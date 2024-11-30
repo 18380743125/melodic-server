@@ -9,17 +9,17 @@ public interface SongGenreDomainService {
     /**
      * 新增歌曲流派
      */
-    Boolean add(SongGenreBO genreBO);
+    void add(SongGenreBO genreBO);
 
     /**
      * 修改歌曲流派信息
      */
-    Boolean update(SongGenreBO genreBO);
+    void update(SongGenreBO genreBO);
 
     /**
      * 删除歌曲流派信息
      */
-    Boolean delete(SongGenreBO genreBO);
+    void delete(SongGenreBO genreBO);
 
     /**
      * 查询歌曲流派列表

@@ -24,11 +24,20 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>com.tangl.melodic</groupId>
             <artifactId>melodic-song-domain</artifactId>
             <version>1.0.0</version>
         </dependency>
-
     </dependencies>
 
 </project>

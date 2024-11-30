@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.google.common.base.Preconditions;
 import com.tangl.song.application.converter.SongGenreDTOConverter;
 import com.tangl.song.application.dto.SongGenreDTO;
-import com.tangl.song.common.entity.Result;
+import com.tangl.song.common.response.R;
 import com.tangl.song.domain.entity.SongGenreBO;
 import com.tangl.song.domain.service.SongGenreDomainService;
 import jakarta.annotation.Resource;
@@ -29,89 +29,53 @@ public class GenreController {
      * 新增歌曲流派信息
      */
     @PostMapping("/add")
-    public Result<?> add(@RequestBody SongGenreDTO genreDTO) {
-        try {
-            if (log.isInfoEnabled()) {
-                log.info("add song genre: {}", JSON.toJSONString(genreDTO));
-            }
+    public R<?> add(@RequestBody SongGenreDTO genreDTO) {
 
-            Preconditions.checkArgument(!StringUtils.isBlank(genreDTO.getName()), "流派名称不能为空");
+        Preconditions.checkArgument(!StringUtils.isBlank(genreDTO.getName()), "流派名称不能为空");
 
-            SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
-            Boolean flag = genreDomainService.add(genreBO);
+        SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
+        genreDomainService.add(genreBO);
 
-            return flag ? Result.ok(true) : Result.fail(false);
-
-        } catch (Exception e) {
-            log.error("GenreController.add.error:{}", e.getMessage(), e);
-            return Result.fail(e.getMessage());
-        }
+        return R.success();
     }
 
     /**
      * 更新歌曲流派信息
      */
     @PutMapping("/update")
-    public Result<?> update(@RequestBody SongGenreDTO genreDTO) {
-        try {
-            if (log.isInfoEnabled()) {
-                log.info("update genre: {}", JSON.toJSONString(genreDTO));
-            }
+    public R<?> update(@RequestBody SongGenreDTO genreDTO) {
 
-            Preconditions.checkNotNull(genreDTO.getId(), "歌曲流派ID不能为空");
+        Preconditions.checkNotNull(genreDTO.getId(), "歌曲流派ID不能为空");
 
-            SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
-            Boolean flag = genreDomainService.update(genreBO);
+        SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
+        genreDomainService.update(genreBO);
 
-            return flag ? Result.ok(true) : Result.fail(false);
-
-        } catch (Exception e) {
-            log.error("GenreController.update.error:{}", e.getMessage(), e);
-            return Result.fail(e.getMessage());
-        }
+        return R.success();
     }
 
     /**
      * 删除歌曲流派信息
      */
     @DeleteMapping("/delete")
-    public Result<?> delete(@RequestBody SongGenreDTO genreDTO) {
-        try {
-            if (log.isInfoEnabled()) {
-                log.info("delete genre: {}", JSON.toJSONString(genreDTO));
-            }
+    public R<?> delete(@RequestBody SongGenreDTO genreDTO) {
 
-            Preconditions.checkNotNull(genreDTO.getId(), "歌曲流派ID不能为空");
+        Preconditions.checkNotNull(genreDTO.getId(), "歌曲流派ID不能为空");
 
-            SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
-            Boolean flag = genreDomainService.delete(genreBO);
+        SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
+        genreDomainService.delete(genreBO);
 
-            return flag ? Result.ok(true) : Result.fail(false);
-
-        } catch (Exception e) {
-            log.error("GenreController.delete.error:{}", e.getMessage(), e);
-            return Result.fail(e.getMessage());
-        }
+        return R.success();
     }
 
     /**
      * 获取歌曲流派信息
      */
     @GetMapping("/queryGenreList")
-    public Result<?> queryGenreList(SongGenreDTO genreDTO) {
-        try {
-            if (log.isInfoEnabled()) {
-                log.info("query genre list: {}", JSON.toJSONString(genreDTO));
-            }
+    public R<?> queryGenreList(SongGenreDTO genreDTO) {
 
-            SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
-            List<SongGenreBO> genreBOList = genreDomainService.queryGenreList(genreBO);
-            return Result.ok(genreBOList);
-
-        } catch (Exception e) {
-            log.error("GenreController.queryGenreList.error:{}", e.getMessage());
-            return Result.fail(e.getMessage());
-        }
+        SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
+        List<SongGenreBO> genreBOList = genreDomainService.queryGenreList(genreBO);
+        return R.data(genreBOList);
     }
 
 }

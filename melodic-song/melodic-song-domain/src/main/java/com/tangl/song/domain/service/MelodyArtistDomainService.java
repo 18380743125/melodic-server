@@ -13,12 +13,12 @@ public interface MelodyArtistDomainService {
     /**
      * 更新歌手信息
      */
-    Boolean update(MelodyArtistBO artistBO);
+    void update(MelodyArtistBO artistBO);
 
     /**
      * 删除歌手信息
      */
-    Boolean delete(MelodyArtistBO artistBO);
+    void delete(MelodyArtistBO artistBO);
 
     /**
      * 条件分页查询歌手
