@@ -1,6 +1,5 @@
 package com.tangl.song.application.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.google.common.base.Preconditions;
 import com.tangl.song.application.converter.SongGenreDTOConverter;
 import com.tangl.song.application.dto.SongGenreDTO;
@@ -71,7 +70,7 @@ public class GenreController {
      * 获取歌曲流派信息
      */
     @GetMapping("/queryGenreList")
-    public R<?> queryGenreList(SongGenreDTO genreDTO) {
+    public R<List<SongGenreBO>> queryGenreList(SongGenreDTO genreDTO) {
 
         SongGenreBO genreBO = genreDTOConverter.genreDTO2GenreBO(genreDTO);
         List<SongGenreBO> genreBOList = genreDomainService.queryGenreList(genreBO);

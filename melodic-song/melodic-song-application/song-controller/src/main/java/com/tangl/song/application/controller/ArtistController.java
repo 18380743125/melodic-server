@@ -1,10 +1,9 @@
 package com.tangl.song.application.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.google.common.base.Preconditions;
+import com.tangl.song.application.converter.MelodyArtistDTOConverter;
 import com.tangl.song.application.dto.MelodyArtistDTO;
 import com.tangl.song.common.entity.PageResult;
-import com.tangl.song.application.converter.MelodyArtistDTOConverter;
 import com.tangl.song.common.response.R;
 import com.tangl.song.domain.entity.MelodyArtistBO;
 import com.tangl.song.domain.service.MelodyArtistDomainService;
@@ -71,7 +70,7 @@ public class ArtistController {
      * 条件获取歌手信息
      */
     @PostMapping("/queryArtistPage")
-    public R<?> queryArtistPage(@RequestBody MelodyArtistDTO artistDTO) {
+    public R<PageResult<MelodyArtistBO>> queryArtistPage(@RequestBody MelodyArtistDTO artistDTO) {
 
         MelodyArtistBO artistBO = artistDTOConverter.artistDTO2ArtistBO(artistDTO);
         PageResult<MelodyArtistBO> pageResult = artistDomainService.queryConditionPage(artistBO);

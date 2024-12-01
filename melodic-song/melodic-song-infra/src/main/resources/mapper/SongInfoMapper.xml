@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tangl.song.infra.basic.mapper.SongInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.tangl.song.infra.basic.entity.SongInfo">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="albumName" column="album_name" jdbcType="VARCHAR"/>
+            <result property="songUrl" column="song_url" jdbcType="VARCHAR"/>
+            <result property="duration" column="duration" jdbcType="INTEGER"/>
+            <result property="cover" column="cover" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="releaseDate" column="release_date" jdbcType="VARCHAR"/>
+            <result property="extJson" column="ext_json" jdbcType="VARCHAR"/>
+            <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateBy" column="update_by" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,album_name,
+        song_url,duration,cover,
+        status,release_date,ext_json,
+        create_by,create_time,update_by,
+        update_time,is_deleted
+    </sql>
+</mapper>
