@@ -2,21 +2,23 @@ package com.tangl.oss.controller;
 
 import com.tangl.oss.entity.Result;
 import com.tangl.oss.service.FileService;
+import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
  * 文件控制器
  */
 @RestController
+@RequestMapping("/files")
 public class FileController {
 
-    @Resource()
+    @Resource
     private FileService fileService;
 
     @GetMapping("/getAllBuckets")
@@ -25,16 +27,16 @@ public class FileController {
     }
 
     @GetMapping("/getUrl")
-    public String getUrl(String bucketName, String objectName) throws Exception {
-        return fileService.getUrl(bucketName, objectName);
+    public String getUrl(String bucket, String objectName) throws Exception {
+        return fileService.getUrl(bucket, objectName);
     }
 
     /**
      * 上传文件
      */
     @PostMapping("/upload")
-    public Result<?> upload(MultipartFile uploadFile, String bucket, String objectName) throws Exception {
-        String url = fileService.uploadFile(uploadFile, bucket, objectName);
+    public Result<?> upload(MultipartFile file, String bucket, String objectName) throws Exception {
+        String url = fileService.uploadFile(file, bucket, objectName);
         return Result.ok(url);
     }
 

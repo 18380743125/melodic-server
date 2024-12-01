@@ -1,0 +1,14 @@
+server:
+  port: 8000
+
+#minio:
+#  url: http:127.0.0.1:9000
+#  accessKey: tangl
+#  secretKey: Qaqa123+
+#
+#storage:
+#  service:
+#    type: minio
+
+logging:
+  config: classpath:log4j2-spring.xml

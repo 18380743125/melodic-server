@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.util.List;
 
 public class AliStorageAdapter implements StorageAdapter {
+
     @Override
     public void createBucket(String bucketName) {
 

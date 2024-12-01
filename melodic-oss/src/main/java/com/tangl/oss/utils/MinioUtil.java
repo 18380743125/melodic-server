@@ -1,12 +1,12 @@
-package com.tangl.oss.util;
+package com.tangl.oss.utils;
 
 import com.tangl.oss.entity.FileInfo;
 import io.minio.*;
 import io.minio.messages.Bucket;
 import io.minio.messages.Item;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.io.InputStream;
 import java.util.LinkedList;
 import java.util.List;

@@ -1,12 +1,12 @@
 package com.tangl.oss.adapter;
 
 import com.tangl.oss.entity.FileInfo;
-import com.tangl.oss.util.MinioUtil;
+import com.tangl.oss.utils.MinioUtil;
+import jakarta.annotation.Resource;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.Resource;
 import java.io.InputStream;
 import java.util.List;
 
@@ -21,7 +21,6 @@ public class MinioStorageAdapter implements StorageAdapter {
     @Value("${minio.url}")
     private String url;
 
-
     @Override
     @SneakyThrows
     public void createBucket(String bucketName) {
@@ -32,8 +31,7 @@ public class MinioStorageAdapter implements StorageAdapter {
     @SneakyThrows
     public void uploadFile(MultipartFile uploadFile, String bucket, String objectName) {
         minioUtil.createBucket(bucket);
-        if (objectName != null) {
-            System.out.println(objectName + "-" + uploadFile.getOriginalFilename());
+        if (objectName != null && !objectName.isEmpty()) {
             minioUtil.uploadFile(uploadFile.getInputStream(),
                     bucket,
                     objectName + "/" + uploadFile.getOriginalFilename());
@@ -77,7 +75,11 @@ public class MinioStorageAdapter implements StorageAdapter {
     @Override
     @SneakyThrows
     public String getUrl(String bucket, String objectName) {
-        return url + "/" + bucket + "/" + objectName;
+        String result = url + "/" + bucket;
+        if (objectName != null && !objectName.isEmpty()) {
+            result = result + "/" + objectName;
+        }
+        return result;
     }
 
 }
