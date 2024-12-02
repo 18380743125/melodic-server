@@ -7,17 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="melodic-song-api" />
-        <module name="melodic-auth" />
         <module name="melodic-song-domain" />
-        <module name="song-job" />
+        <module name="melodic-auth-common" />
         <module name="melodic-oss" />
         <module name="melodic-song-infra" />
+        <module name="melodic-auth-api" />
         <module name="song-controller" />
         <module name="song-mq" />
         <module name="melodic-song-starter" />
+        <module name="melodic-auth-domain" />
+        <module name="melodic-auth-infra" />
+        <module name="melodic-song-api" />
+        <module name="song-job" />
+        <module name="auth-job" />
+        <module name="melodic-auth-starter" />
         <module name="melodic-song-common" />
+        <module name="auth-controller" />
         <module name="gateway" />
+        <module name="auth-mq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -5,26 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec2b892-f15f-488f-88d3-26c4467c37b5" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/exception/WebExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/log/HttpLogEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/log/HttpLogEntityBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/log/HttpLogFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/serializer/Date2StringSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/serializer/IdEncryptSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-job/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-mq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/constants/AuthConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/entity/PageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/entity/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/enums/IsDeletedFlagEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/enums/StatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/exception/MelodicBusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/response/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/response/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/utils/AES128Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/utils/IdUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-infra/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/java/com/tangl/auth/starter/AuthApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources/application-dev.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources/application-prod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources/bootstrap.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/199652c8-ec4f-483e-98bd-ec7cdad791c3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/199652c8-ec4f-483e-98bd-ec7cdad791c3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/melodic-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/OssApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/OssApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/adapter/AliStorageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/adapter/AliStorageAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/adapter/MinioStorageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/adapter/MinioStorageAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/config/MinioConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/config/MinioConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/config/StorageConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/config/StorageConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/entity/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/entity/ResultCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/utils/MinioUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/java/com/tangl/oss/utils/MinioUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-oss/src/main/resources/bootstrap.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-oss/src/main/resources/bootstrap.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-job/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-mq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-mq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-infra/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-infra/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-starter/src/main/java/com/tangl/song/application/starter/SongApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-starter/src/main/java/com/tangl/song/starter/SongApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-starter/target/classes/com/tangl/song/application/starter/SongApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-song/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +72,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -54,62 +87,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.DruidEncryptUtil.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.gateway [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-auth [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-oss [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-oss [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song-api [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song-application [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song-common [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song-domain [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song-domain [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song-infra [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.melodic-song-starter [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.song-controller [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.song-job [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.song-mq [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.OssApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SongApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tangliang/java-project/melodic-server/melodic-song/melodic-song-application/song-controller/src/main/java/com/tangl/song/application/log&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.DruidEncryptUtil.executor": "Run",
+    "Maven.gateway [clean].executor": "Run",
+    "Maven.melodic-auth [clean].executor": "Run",
+    "Maven.melodic-oss [clean].executor": "Run",
+    "Maven.melodic-oss [validate].executor": "Run",
+    "Maven.melodic-song [clean].executor": "Run",
+    "Maven.melodic-song [install].executor": "Run",
+    "Maven.melodic-song [package].executor": "Run",
+    "Maven.melodic-song-api [clean].executor": "Run",
+    "Maven.melodic-song-application [clean].executor": "Run",
+    "Maven.melodic-song-common [clean].executor": "Run",
+    "Maven.melodic-song-domain [clean].executor": "Run",
+    "Maven.melodic-song-domain [validate].executor": "Run",
+    "Maven.melodic-song-infra [clean].executor": "Run",
+    "Maven.melodic-song-starter [clean].executor": "Run",
+    "Maven.song-controller [clean].executor": "Run",
+    "Maven.song-job [clean].executor": "Run",
+    "Maven.song-mq [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuthApplication.executor": "Run",
+    "Spring Boot.OssApplication.executor": "Run",
+    "Spring Boot.SongApplication (1).executor": "Run",
+    "Spring Boot.SongApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/tangliang/java-project/melodic-server/melodic-auth/melodic-auth-common/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.31724137",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect&quot;: [
-      &quot;MySQL&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java" />
+      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources" />
+      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application" />
       <recent name="$PROJECT_DIR$/melodic-song/melodic-song-application/song-controller/src/main/java/com/tangl/song/application/log" />
       <recent name="$PROJECT_DIR$/melodic-song/melodic-song-application/song-controller/src/main/java/com/tangl/song/application" />
-      <recent name="$PROJECT_DIR$/melodic-song/melodic-song-common/src/main/java/com/tangl/song/common" />
-      <recent name="$PROJECT_DIR$/melodic-song/melodic-song-common/src/main/java/com/tangl/song/common/response" />
-      <recent name="$PROJECT_DIR$/melodic-song/melodic-song-starter/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tangl.song.application.controller" />
@@ -119,7 +155,17 @@
       <recent name="com.tangl.song.application.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SongApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
     <configuration name="DruidEncryptUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tangl.song.infra.basic.utils.DruidEncryptUtil" />
       <module name="melodic-song-infra" />
@@ -146,12 +192,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OssApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="melodic-oss" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tangl.oss.OssApplication" />
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="melodic-auth-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tangl.auth.starter.AuthApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tangl.oss.*" />
+          <option name="PATTERN" value="com.tangl.auth.starter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,10 +207,10 @@
     </configuration>
     <configuration name="SongApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="melodic-song-starter" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tangl.song.application.starter.SongApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tangl.song.starter.SongApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tangl.song.application.starter.*" />
+          <option name="PATTERN" value="com.tangl.song.starter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +218,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.DruidEncryptUtil" />
+      <item itemvalue="Spring Boot.AuthApplication" />
+      <item itemvalue="Spring Boot.SongApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AuthApplication" />
         <item itemvalue="Spring Boot.SongApplication" />
         <item itemvalue="Application.DruidEncryptUtil" />
-        <item itemvalue="Spring Boot.OssApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +271,8 @@
       <workItem from="1732961138020" duration="14971000" />
       <workItem from="1732982457991" duration="1469000" />
       <workItem from="1732983937804" duration="89000" />
-      <workItem from="1733056982683" duration="7365000" />
+      <workItem from="1733056982683" duration="7681000" />
+      <workItem from="1733139728835" duration="11175000" />
     </task>
     <servers />
   </component>

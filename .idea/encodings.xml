@@ -3,6 +3,24 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-job/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-mq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-mq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-application/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-infra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-infra/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/melodic-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/melodic-auth/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/melodic-oss/src/main/java" charset="UTF-8" />
