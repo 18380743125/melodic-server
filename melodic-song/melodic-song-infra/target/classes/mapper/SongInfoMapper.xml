@@ -12,7 +12,7 @@
             <result property="duration" column="duration" jdbcType="INTEGER"/>
             <result property="cover" column="cover" jdbcType="VARCHAR"/>
             <result property="status" column="status" jdbcType="TINYINT"/>
-            <result property="releaseDate" column="release_date" jdbcType="VARCHAR"/>
+            <result property="releaseDate" column="release_date" jdbcType="DATE"/>
             <result property="extJson" column="ext_json" jdbcType="VARCHAR"/>
             <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
             <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
@@ -21,11 +21,63 @@
             <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
     </resultMap>
 
-    <sql id="Base_Column_List">
-        id,name,album_name,
-        song_url,duration,cover,
-        status,release_date,ext_json,
-        create_by,create_time,update_by,
-        update_time,is_deleted
-    </sql>
+    <select id="queryPage" resultMap="BaseResultMap">
+        select id,
+               `name`,
+               album_name,
+               song_url,
+               duration,
+               cover,
+               `status`,
+               release_date,
+               ext_json,
+               create_by,
+               create_time,
+               update_by,
+               update_time,
+               is_deleted
+        from song_info
+        <where>
+            <if test="info.id != null">
+                and id = #{info.id}
+            </if>
+            <if test="info.name != null and info.name != ''">
+                and `name` = #{info.name}
+            </if>
+            <if test="info.albumName != null">
+                and album_name = #{info.albumName}
+            </if>
+            <if test="info.songUrl != null">
+                and song_url = #{info.songUrl}
+            </if>
+            <if test="info.duration != null and info.duration != ''">
+                and duration = #{info.duration}
+            </if>
+            <if test="info.cover != null and info.cover != ''">
+                and cover = #{info.cover}
+            </if>
+            <if test="info.status != null and info.status != ''">
+                and `status` = #{info.status}
+            </if>
+            <if test="info.releaseDate != null">
+                and release_date = #{info.releaseDate}
+            </if>
+            <if test="info.createBy != null and info.createBy != ''">
+                and create_by = #{info.createBy}
+            </if>
+            <if test="info.createTime != null">
+                and create_time = #{info.createTime}
+            </if>
+            <if test="info.updateBy != null and info.updateBy != ''">
+                and update_by = #{info.updateBy}
+            </if>
+            <if test="info.updateTime != null">
+                and update_time = #{info.updateTime}
+            </if>
+            <if test="info.isDeleted != null">
+                and is_deleted = #{info.isDeleted}
+            </if>
+        </where>
+        limit #{offset}, #{pageSize}
+    </select>
 </mapper>

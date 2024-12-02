@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-12-01T23:34:22+0800",
+    date = "2024-12-02T22:24:13+0800",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.13 (Homebrew)"
 )
 @Component
@@ -23,6 +23,8 @@ public class SongInfoDTOConverterImpl implements SongInfoDTOConverter {
 
         SongInfoBO songInfoBO = new SongInfoBO();
 
+        songInfoBO.setPageNo( infoDTO.getPageNo() );
+        songInfoBO.setPageSize( infoDTO.getPageSize() );
         songInfoBO.setId( infoDTO.getId() );
         songInfoBO.setName( infoDTO.getName() );
         songInfoBO.setAlbumName( infoDTO.getAlbumName() );

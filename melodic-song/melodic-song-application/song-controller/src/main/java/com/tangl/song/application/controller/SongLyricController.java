@@ -11,8 +11,6 @@ import jakarta.annotation.Resource;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/lyric")
 public class SongLyricController {
@@ -69,12 +67,12 @@ public class SongLyricController {
     /**
      * 获取歌曲信息
      */
-    @GetMapping("/query")
-    public R<PageResult<List<SongLyricBO>>> queryGenreList(SongLyricDTO lyricDTO) {
+    @PostMapping("/query")
+    public R<PageResult<SongLyricBO>> queryGenreList(@RequestBody SongLyricDTO lyricDTO) {
 
         SongLyricBO lyricBO = lyricDTOConverter.lyricDTO2LyricBO(lyricDTO);
 
-        PageResult<List<SongLyricBO>> pageResult = lyricDomainService.query(lyricBO);
+        PageResult<SongLyricBO> pageResult = lyricDomainService.query(lyricBO);
         return R.data(pageResult);
     }
 }

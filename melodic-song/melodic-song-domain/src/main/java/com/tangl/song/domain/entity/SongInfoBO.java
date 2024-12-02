@@ -1,13 +1,16 @@
 package com.tangl.song.domain.entity;
 
+import com.tangl.song.common.entity.PageInfo;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Date;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
-public class SongInfoBO implements Serializable {
+public class SongInfoBO extends PageInfo implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 489493997516844896L;

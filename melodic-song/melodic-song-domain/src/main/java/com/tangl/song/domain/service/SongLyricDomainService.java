@@ -3,8 +3,6 @@ package com.tangl.song.domain.service;
 import com.tangl.song.common.entity.PageResult;
 import com.tangl.song.domain.entity.SongLyricBO;
 
-import java.util.List;
-
 public interface SongLyricDomainService {
 
     /**
@@ -25,5 +23,5 @@ public interface SongLyricDomainService {
     /**
      * 查询歌词列表
      */
-    PageResult<List<SongLyricBO>> query(SongLyricBO lyricBO);
+    PageResult<SongLyricBO> query(SongLyricBO lyricBO);
 }

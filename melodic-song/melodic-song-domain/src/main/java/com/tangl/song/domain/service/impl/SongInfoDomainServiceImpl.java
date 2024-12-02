@@ -1,5 +1,7 @@
 package com.tangl.song.domain.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.tangl.song.common.entity.PageResult;
 import com.tangl.song.common.enums.IsDeletedFlagEnum;
 import com.tangl.song.common.enums.StatusEnum;
@@ -48,7 +50,23 @@ public class SongInfoDomainServiceImpl implements SongInfoDomainService {
     }
 
     @Override
-    public PageResult<List<SongInfoBO>> query(SongInfoBO infoBO) {
-        return null;
+    public PageResult<SongInfoBO> query(SongInfoBO infoBO) {
+        PageResult<SongInfoBO> pageResult = new PageResult<>();
+        Integer pageNo = infoBO.getPageNo();
+        Integer pageSize = infoBO.getPageSize();
+        Integer offset = (pageNo - 1) * pageSize;
+
+        SongInfo info = infoBOConverter.infoBO2Info(infoBO);
+        QueryWrapper<SongInfo> query = Wrappers.query(info);
+
+        int count = (int) infoService.count(query);
+        List<SongInfo> infoList = infoService.queryPage(info, offset, pageSize);
+
+        List<SongInfoBO> infoBOList = infoBOConverter.infoList2InfoBOList(infoList);
+
+        pageResult.setRecords(infoBOList);
+        pageResult.setTotal(count);
+
+        return pageResult;
     }
 }

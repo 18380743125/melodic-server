@@ -14,10 +14,40 @@
             <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
             <result property="isDeleted" column="is_deleted" jdbcType="TINYINT"/>
     </resultMap>
-
-    <sql id="Base_Column_List">
-        id,song_id,text,
-        create_by,create_time,update_by,
-        update_time,is_deleted
-    </sql>
+    
+    <select id="queryPage" resultMap="BaseResultMap">
+        select id,
+        song_id,
+        text,
+        create_by,
+        create_time,
+        update_by,
+        update_time,
+        is_deleted
+        from song_lyric
+        <where>
+            <if test="lyric.id != null">
+                and id = #{lyric.id}
+            </if>
+            <if test="lyric.songId != null and lyric.songId != ''">
+                and song_id = #{lyric.songId}
+            </if>
+            <if test="lyric.createBy != null and lyric.createBy != ''">
+                and create_by = #{lyric.createBy}
+            </if>
+            <if test="lyric.createTime != null">
+                and create_time = #{lyric.createTime}
+            </if>
+            <if test="lyric.updateBy != null and lyric.updateBy != ''">
+                and update_by = #{lyric.updateBy}
+            </if>
+            <if test="lyric.updateTime != null">
+                and update_time = #{lyric.updateTime}
+            </if>
+            <if test="lyric.isDeleted != null">
+                and is_deleted = #{lyric.isDeleted}
+            </if>
+        </where>
+        limit #{offset}, #{pageSize}
+    </select>
 </mapper>
