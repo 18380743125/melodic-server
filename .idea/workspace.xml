@@ -5,55 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec2b892-f15f-488f-88d3-26c4467c37b5" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/exception/WebExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/log/HttpLogEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/log/HttpLogEntityBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/log/HttpLogFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/serializer/Date2StringSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/serializer/IdEncryptSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-job/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-mq/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/constants/AuthConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/entity/PageInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/entity/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/enums/IsDeletedFlagEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/enums/StatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/exception/MelodicBusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/response/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/response/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/utils/AES128Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java/com/tangl/auth/common/utils/IdUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-infra/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/java/com/tangl/auth/starter/AuthApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources/application-prod.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources/bootstrap.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/controller/RolePermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/controller/UserRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/converter/AuthPermissionDTOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/converter/AuthRoleDTOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/converter/AuthUserDTOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/dto/AuthPermissionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/dto/AuthRoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/dto/AuthRolePermissionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/dto/AuthUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/dto/AuthUserRoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/converter/AuthPermissionBOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/converter/AuthRoleBOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/converter/AuthUserBOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/entity/AuthPermissionBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/entity/AuthRoleBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/entity/AuthRolePermissionBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/entity/AuthUserBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/entity/AuthUserRoleBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/AuthPermissionDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/AuthRoleDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/AuthRolePermissionDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/AuthUserDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/AuthUserRoleDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/impl/AuthPermissionDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/impl/AuthRoleDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/impl/AuthRolePermissionDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/impl/AuthUserDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/impl/AuthUserRoleDomainServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-job/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-mq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-application/song-mq/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-infra/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-infra/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-starter/src/main/java/com/tangl/song/application/starter/SongApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/melodic-song-starter/src/main/java/com/tangl/song/starter/SongApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/melodic-song-starter/target/classes/com/tangl/song/application/starter/SongApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/melodic-song/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-song/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/melodic-auth/melodic-auth-infra/src/main/java/com/tangl/auth/infra/basic/service/impl/AuthUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/melodic-auth/melodic-auth-infra/src/main/java/com/tangl/auth/infra/basic/service/impl/AuthUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,18 +49,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -120,7 +105,7 @@
     "Spring Boot.SongApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/tangliang/java-project/melodic-server/melodic-auth/melodic-auth-common/src/main/java",
+    "last_opened_file_path": "/Users/tangliang/java-project/melodic-server/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/converter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -141,11 +126,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/converter" />
+      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application/dto" />
+      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/entity" />
+      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-domain/src/main/java/com/tangl/auth/domain/service/impl" />
       <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-common/src/main/java" />
-      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-starter/src/main/resources" />
-      <recent name="$PROJECT_DIR$/melodic-auth/melodic-auth-application/auth-controller/src/main/java/com/tangl/auth/application" />
-      <recent name="$PROJECT_DIR$/melodic-song/melodic-song-application/song-controller/src/main/java/com/tangl/song/application/log" />
-      <recent name="$PROJECT_DIR$/melodic-song/melodic-song-application/song-controller/src/main/java/com/tangl/song/application" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.tangl.song.application.controller" />
@@ -272,7 +257,8 @@
       <workItem from="1732982457991" duration="1469000" />
       <workItem from="1732983937804" duration="89000" />
       <workItem from="1733056982683" duration="7681000" />
-      <workItem from="1733139728835" duration="11175000" />
+      <workItem from="1733139728835" duration="11407000" />
+      <workItem from="1733231071995" duration="4646000" />
     </task>
     <servers />
   </component>

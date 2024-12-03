@@ -14,7 +14,3 @@ public class AuthUserServiceImpl extends ServiceImpl<AuthUserMapper, AuthUser>
         implements AuthUserService {
 
 }
-
-
-
-
